@@ -11,6 +11,7 @@ int teeth = 5;
 float toothWidth = mouthWidth/teeth;
 float toothHeight = mouthHeight;
 float mouthCenter = mouthWidth/2;
+float leftCorner = face_x-mouthCenter;
 
 fill(0);
 circle(face_x, face_y, faceSize);
@@ -22,8 +23,9 @@ circle(face_x-10,face_y-5,faceSize*0.1);
 circle(face_x+10,face_y-5,faceSize*0.1);
 fill(255);
 ellipse(face_x, face_y+mouthHeight, mouthWidth, mouthHeight);
-line(face_x+mouthCenter, face_y+10, face_x-mouthCenter, face_y+10);
+line(face_x+mouthCenter, face_y+10, leftCorner, face_y+10);
 for (int i = 0; i < teeth; ++i)
 {
-    line(mouthCenter-toothWidth, face_y+mouthHeight, mouthCenter-toothWidth, face_y-mouthHeight);
+    line((leftCorner)+toothWidth, face_y, (leftCorner)+toothWidth, face_y+mouthHeight*2);
+    leftCorner = leftCorner+toothWidth;
 }

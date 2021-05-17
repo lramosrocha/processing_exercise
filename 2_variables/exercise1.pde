@@ -2,8 +2,8 @@
     @author leandro
 */
 
-float grade1 = random(1, 6);
-float grade2 = random(1, 6);
+float grade1 = random(1, 6.1);
+float grade2 = random(1, 6.1);
 float avgGrade = (grade1 + grade2) / 2;
 
 println("");

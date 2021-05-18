@@ -2,6 +2,6 @@
     @author leandro
 */
 
-println("");
-println("Processing");
-println("ist leicht");
+print("");
+print("Processing\n");
+print("ist leicht\n");

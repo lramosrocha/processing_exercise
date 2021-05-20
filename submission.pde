@@ -1,5 +1,6 @@
 /*Abgabe Processing Übungsaufgaben
-GitHub Link: https://github.com/Lokivir/HEMS*/
+GitLab Link: https://git.gsi.de/l.ramosrocha/HEMS
+*/
 
 //1. Erste Schritte in Processing
 //Übung 1

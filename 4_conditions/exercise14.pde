@@ -4,6 +4,7 @@
 
 float angle = 0;
 float width = 512;
+int mouseX;
 
 void setup()
 {
@@ -12,6 +13,7 @@ void setup()
 
 void draw()
 {
+    mouseX = mouseX;
     background(0, 0, 0, 255);
     angle++;
     stroke(255);
@@ -19,7 +21,8 @@ void draw()
     circle(width/2, width/2, 400);
     fill(255);
     arc(width/2, width/2, 400, 400, -HALF_PI, ((TAU/360)*angle)-HALF_PI);
-    if (angle == 360)
+    //delay(1000);
+    if (angle >= 360)
     {
         angle = 0;
     }
